@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style5
+        {
+            width: 814px;
+            height: 6px;
+        }
+        .style7
+        {
+            height: 29px;
+        }
+        .style9
+        {
+            font-size: x-large;
+        }
+        .style10
+        {
+            width: 971px;
+            height: 6px;
+        }
+        .auto-style1 {
+            width: 100%;
+            height: 284px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style10" style="background-color: #FFFFFF">
+                <asp:ImageButton ID="ImageButton4" runat="server" Height="47px" 
+                    ImageUrl="~/images/contactus.jpg" Width="50px" 
+                    AlternateText="Contact Us" PostBackUrl="~/contactus.aspx" />
+                &nbsp;
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="45px" 
+                    ImageUrl="~/images/help.png" onclick="ImageButton3_Click" Width="50px" 
+                    AlternateText="Help" PostBackUrl="~/help.aspx" />
+                &nbsp; <asp:ImageButton ID="ImageButton5" runat="server" AlternateText="Login " 
+                    Height="44px" ImageUrl="~/images/logout.jpg" Width="48px" 
+                        PostBackUrl="~/firstpage.aspx" />
+
+                &nbsp;
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="43px" 
+                    ImageUrl="~/images/home.jpg" Width="45px" AlternateText="Home " PostBackUrl="~/home.aspx" />
+                &nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Georgia" Font-Size="X-Large" ForeColor="Maroon"></asp:Label>
+&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td class="style5" style="background-color: #FFFFFF">
+                <div style="width: 818px; height: 40px">
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;</div></td>
+        </tr>
+        <tr>
+            <td bgcolor="White" class="style7" colspan="2">
+                <table class="auto-style1">
+                    <tr>
+                        <td style="background-image: url('/images/bg1.jpg')" align="center">
+                            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="200px" 
+                                ImageUrl="~/images/logo1.jpg" Width="620px" ImageAlign="Middle" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                    BorderColor="#99FFCC" Font-Bold="True" Font-Names="Times New Roman" 
+                    Font-Size="XX-Large" ForeColor="Black" onmenuitemclick="Menu1_MenuItemClick" 
+                    BackColor="White" Height="31px" RenderingMode="Table" Width="100%">
+                    <DynamicHoverStyle BackColor="#FF9900" ForeColor="Maroon" BorderColor="Maroon" />
+                    <DynamicMenuItemStyle BackColor="Maroon" BorderColor="Maroon" BorderStyle="Solid" 
+                        BorderWidth="3px" ForeColor="#CCFFFF" HorizontalPadding="1px" ItemSpacing="1px" 
+                        VerticalPadding="1px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Bakery" Value="Bakery">
+                            <asp:MenuItem Text="Cakes" Value="Cakes" NavigateUrl="~/cakegallery.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Sweets" Value="Sweets" NavigateUrl="~/sweetgallery.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Chocolates" Value="Chocolates" NavigateUrl="~/chocalate_gallery.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Snacks" Value="Snacks" NavigateUrl="~/snacks_gallery.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Cold drinks" Value="Cold drinks" NavigateUrl="~/coldrinks_gallery.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Restaurant" Value="Specials">
+                            <asp:MenuItem Text="Fast Food" Value="Fast Food" NavigateUrl="~/fastfood.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Cafe" Value="Cafe" NavigateUrl="~/cafe.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Occasion" Value="Occasion">
+                            <asp:MenuItem Text="Birthaday " Value="Birthaday " NavigateUrl="~/birthday.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Special Treat" Value="Special Treat" NavigateUrl="~/specialtreat.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Specials" Value="Cafe" NavigateUrl="~/specials.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                        <asp:MenuItem PopOutImageUrl="~/images/login.jpg" Text="Feedback" Value="Login" 
+                            NavigateUrl="~/feedback.aspx">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#FF9900" ForeColor="Maroon" BorderColor="Maroon" />
+                    <StaticMenuItemStyle BackColor="Maroon" BorderColor="Maroon" BorderStyle="Solid" 
+                        BorderWidth="3px" ForeColor="White" HorizontalPadding="0px" ItemSpacing="0px" 
+                        VerticalPadding="1px" />
+                    <StaticMenuStyle BackColor="White" />
+                    <StaticSelectedStyle Width="100%" />
+                </asp:Menu>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#993333" 
+                
+                
+                
+                
+                style="font-family: 'Times New Roman', Times, serif; font-size: large; color: #FFFFFF" 
+                colspan="2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span 
+                    class="style9">&nbsp;Copyright2019@safafoods.com&nbsp;&nbsp;&nbsp;
+                &nbsp;</span></strong></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
